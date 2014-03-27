@@ -1,0 +1,33 @@
+* Prerequisites
+To run “Rating my city” web application you need the following to be installed in your host:
+PHP version 5.2.4 or greater
+MySQL version 5.0 or greater
+The requirements have changed as of WordPress 3.2. 
+It is recommended Apache or server for running WordPress, but any server that supports PHP and MySQL will do.
+
+
+* Ten steps installation
+1.	Create a MySQL DB to your localhost with the name “dimos_thessalonikis”
+2.	Create an admin user for the above “dimos_thessalonikis” MySQL database
+3.	Download the db_dimos_thessalonikis.zip file which contains the MySQL DB
+4.	Import that db_dimos_thessalonikise.zip file into your local MySQL server
+5.	Download the file “wp_dimos_thessalonikis.zip”
+6.	Extract the contents of the “wp_dimos_thessalonikis.zip” into a sub directory of your local web server. Now you should have a subdirectory into your web server called “dimos_thessalonikis”.
+7.	Modify the wp-config.php file in the directory “dimos_thessalonikis” with the data of the admin user you have declared in step 2 i.e.
+/** MySQL database username */
+define('DB_USER', 'admin user');
+/** MySQL database password */
+define('DB_PASSWORD', 'admin password');
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+8.	After successfully importing the DB file into your local MySQL server go to http:///localhost/dimos_thessalonikis/wp-admin and login with the username: admin_dthes and password:THES2014
+You should modify the above later.
+By now you should be able to see the WP administration dashboard
+
+9.	Download the file ata-settings.txt and open it with a simple text editor. Copy the content.
+10.	Go to WP Dashboard -> Appearance ->Atahualpa Theme options and paste the text that you have copied in step 8 and Click Import settings
+
+The “Rating my city” application is ready and you see it in http:///localhost/dimos_thessalonikis/ 
+
+Thank you for trying this web application!
